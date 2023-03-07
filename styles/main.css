@@ -1,0 +1,149 @@
+/*
+#031927 - dark blue
+#65743A - olive green
+#8DA352 - light olive green
+#D7C9AA - tan
+#7B2D26 - dark red
+#F0F3F5 - off-white
+*/
+
+html{
+    background-color: #8DA352;
+}
+
+
+body{
+    font-family: 'Righteous', cursive;
+}
+
+p{
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+}
+
+.breadcrumb{
+    margin-top: 52px;
+}
+
+#welcome-message{
+    margin-top: 70px;
+}
+
+footer{
+    background-color: #031927;
+    border: 2px solid #D7C9AA;
+    border-width: 2px 0px 0px 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+footer.content.has-text-light{
+    margin: 0%;
+}
+
+footer.content.has-text-light:hover{
+    cursor: pointer;
+}
+
+.movie-poster{
+    max-width: 50vw;
+    max-height: 350px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 440px){
+    #gridbox{
+        display: grid;
+        grid-template-areas: 
+        "film1 film2";
+    }
+    
+    .content.grid-area{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-image: linear-gradient(#65743A, #031927);
+        padding: 5px;
+        border: 2px solid #D7C9AA;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    #gridbox{
+        display: grid;
+        grid-template-areas: 
+        "film1"
+        "film2";
+        background-image: linear-gradient(#65743A, #031927);
+    }
+    
+    .content.grid-area{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border: 2px solid #D7C9AA;
+        margin-bottom: 0px;
+    }
+}
+
+
+.movie-poster:hover{
+    cursor: pointer;
+    border: 3px solid #D7C9AA;
+}
+
+.outline, .outline:visited{
+    font-size: x-large;
+    color: #031927;
+    padding: 10px;
+}
+
+.outline:hover{
+    color: #D7C9AA;
+}
+
+.outline:active{
+    color: #8DA352;
+}
+
+
+#left-btn, #right-btn, #left-btn:visited, #right-btn:visited{
+    background-color: #031927;
+    color: white;
+}
+
+#left-btn:hover, #right-btn:hover{
+    background-color: #65743A;
+    color: white;
+}
+
+#left-btn:active, #right-btn:active{
+    background-color: #8DA352;
+    color: #031927;
+}
+
+.analysis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    border: 5px solid #031927;
+}
+
+iframe{
+    border: 3px solid #031927;
+    align-self: center;
+}
+
+h1, h2{
+    padding-left: 10px;
+}
